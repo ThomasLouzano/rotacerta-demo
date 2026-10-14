@@ -1,0 +1,22 @@
+{
+  "source": "RotaCerta v12 + PWA shell",
+  "platform": "Chromium / embedded local DOM preview",
+  "tests": [
+    "Initial login and complete Amaro logo; 30 fictitious orders",
+    "Login layout: 320, 360, 390, 430, 768 and 1280px without horizontal overflow",
+    "Static manifest and required icon files present",
+    "All four login profiles route to their proper workspace",
+    "Created order with two boxes, cold-box linkage, dispatch checks, manifest and one delivery; notices simulated at correct events",
+    "Installation/about controls explain the local-only demo and simulated integrations",
+    "No uncaught JavaScript errors or external requests during the scenario"
+  ],
+  "not_tested": [
+    "Real service-worker activation/offline reload: browser network policy blocks all URLs",
+    "Physical Android/iOS installation",
+    "GitHub deployment: connection pending"
+  ],
+  "external_requests": [],
+  "javascript_errors": [],
+  "unit_tests": "Passed service-worker unit tests with mocked browser APIs.",
+  "syntax": "Passed node --check for all three JavaScript sources."
+}
